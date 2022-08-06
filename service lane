@@ -1,0 +1,14 @@
+function serviceLane(n, cases) {
+    // Write your code here
+    let min = []
+    for(let i = 0; i<cases.length; i++){
+        let a = []
+        for(let t = cases[i][0]; t <= cases[i][1]; t++) {
+            a.push(n[t])
+        }
+        min.push(Math.min.apply(Math,a))
+    } 
+    return min
+} 
+
+// error bo'lyapti

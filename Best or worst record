@@ -1,0 +1,21 @@
+function breakingRecords(scores) {
+    // Write your code here
+    let allGames = scores;
+    let min = allGames[0];
+    let max = allGames[0];
+    
+    let minRecord = 0;
+    let maxRecord = 0;
+    
+    for (const score of allGames){
+        if (max < score){
+            max = score;
+            maxRecord++;
+        }
+        else if (min > score){
+            min = score;
+            minRecord++;
+        }
+    }
+    return [maxRecord, minRecord];
+}

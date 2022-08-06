@@ -1,0 +1,12 @@
+function jumpingOnClouds(c) {
+    // Write your code here
+    let jumpCount = 0;
+    for (let i = 0; i < c.length - 1; i++, jumpCount++) {
+    if (i + 2 < c.length && c[i + 2] == 0) {
+      i++;
+    }
+  }
+  return jumpCount;
+}
+
+// yaxshi tushunmadim

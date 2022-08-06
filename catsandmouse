@@ -1,0 +1,11 @@
+function catAndMouse(x, y, z) {
+    const catADistance = Math.abs(z-x);
+    const catBDistance = Math.abs(z-y);
+    if (catADistance>catBDistance){
+        return 'Cat B'
+    }
+    if (catADistance<catBDistance){
+        return 'Cat A'
+    }
+    return 'Mouse C'
+}
